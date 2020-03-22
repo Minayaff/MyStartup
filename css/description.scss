@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+// <!-- Description Section Start--------------------------------------- -->
+.descrp {
+    .card {
+        .card-pict {
+            img {
+                height: 80%;
+            }
+
+            .rating {
+                margin: auto;
+
+                .wave,
+                .like {
+                    width: 36px;
+                    height: 53px;
+                    padding: 0;
+                    background: transparent;
+                    border: none;
+                    margin: 0 1rem;
+
+                }
+
+                .wave,
+                .like:focus {
+                    outline: none;
+                }
+
+            }
+        }
+    }
+
+    .card-body {
+        button:first-child {
+            background: transparent;
+            border: none;
+            position: absolute;
+            right: 1rem;
+            font-size: 1.9rem;
+            color: #ABACAC;
+            margin: -1% 0;
+        }
+
+        button:nth-child(2) {
+            background: transparent;
+            border: none;
+            position: absolute;
+            right: 4rem;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        .prof {
+            display: flex;
+
+            h5 {
+                margin-left: 1rem !important;
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+
+            img {
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;
+            }
+
+            h5 {
+                margin: auto 0;
+            }
+        }
+
+        .text-title {
+            margin-top: 1rem;
+            display: flex;
+            color: #303030;
+
+            h5 {
+                font-weight: 600;
+                font-size: 1.3rem;
+            }
+
+            p {
+                position: absolute;
+                right: 0;
+                color: #acabab !important;
+            }
+        }
+
+        .text-main {
+            p {
+                color: #303030;
+                font-size: 15px;
+            }
+        }
+
+        .card-info {
+            .infor {
+                font-size: 15px;
+                display: flex;
+
+                .main-info {
+                    color: #717171;
+                    font-weight: 500;
+                }
+
+                p {
+                    color: #303030;
+                    margin-right: 1.3rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+
+.join {
+    width: 140px;
+    height: 45px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #3165b2 0%, #90298d 100%);
+    color: #ffffff;
+    outline: none;
+    border: none;
+}
+
+// <!-- Post Section Start--------------------------------------- -->
+
+.post {
+    width: 140px;
+    height: 45px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #3165b2 0%, #90298d 100%);
+    color: #ffffff;
+    outline: none;
+    border: none;
+    margin: 2rem auto;
+    display: block;
+}
+
+// <!-- Comments Section Start--------------------------------------- -->
+.comments {
+    background: #ececec;
+    height: 100%;
+
+    textarea {
+        margin: auto;
+        width: 85%;
+        display: block;
+        resize: none;
+    }
+
+    h1 {
+        color: #ACABAB;
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        margin-left: 6rem;
+    }
+
+    .comment {
+        margin: auto;
+        position: relative;
+        width: 85%;
+        background-color: #FFFFFF;
+        margin-bottom: 2rem;
+        padding: 1rem 0;
+
+        .auto {
+            width: 90%;
+            margin: auto;
+
+            p {
+                margin-top: 1.2rem;
+            }
+
+            .prof {
+                display: flex;
+
+                p {
+                    position: absolute;
+                    right: 2rem;
+                }
+
+                h5 {
+                    margin-left: 1rem !important;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                }
+
+                img {
+                    width: 55px;
+                    height: 55px;
+                    border-radius: 50%;
+                }
+
+                h5 {
+                    margin: auto 0;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .card {
+        max-width: 100% !important;
+    }
+}
+
+
+
+@media only screen and (max-width: 550px) {
+    .descrp .card-body button:first-child {
+        margin: -2% 0;
+    }
+    .comments {
+        textarea {
+            width: 100%;
+        }
+
+        .comment {
+            width: 100%;
+
+        }
+    }
+
+    .card-body {
+        padding-left: 0rem !important;
+
+        .card-info {
+            .infor {
+                font-size: 14px !important;
+            }
+
+            button {
+                display: block;
+                margin: auto !important;
+            }
+        }
+
+        .text-title {
+            h5 {
+                font-size: 1rem !important;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

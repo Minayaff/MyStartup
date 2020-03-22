@@ -1,0 +1,478 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.containers {
+  width: 90%;
+  margin: auto;
+}
+
+.clearfix {
+  content: "";
+  clear: both;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 9999;
+}
+
+.nav .navBar {
+  height: 77px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .navBar .rightnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav .navBar .rightnav a {
+  color: #303030;
+  font-size: 16px;
+}
+
+.nav .navBar .rightnav a:hover {
+  color: #343DBD;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.nav .navBar .rightnav img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+}
+
+.nav .navBar div:nth-child(2) {
+  width: 260px;
+}
+
+.nav .navBar .line {
+  border: 0.5px solid #ACABAB;
+  height: 33px;
+}
+
+#main {
+  padding: 0 !important;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 10000;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  right: 0;
+  background-color: #3165B2;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav .list-group .closebtn {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  color: #FFFFFF;
+  font-size: 2.5rem;
+}
+
+.sidenav .list-group li {
+  background-color: #3165B2 !important;
+  text-align: right;
+}
+
+.sidenav .list-group li a {
+  padding: 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff !important;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  -webkit-transition: margin-left .5s;
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.back-image {
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(5, 5, 5, 0.6)), url(../img/background-image/pexels-photo-745045.jpeg);
+  height: 548px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.back-image .text {
+  text-align: center;
+  padding-top: 202px;
+  color: #ffffff;
+}
+
+.back-image .text h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 33px;
+}
+
+.back-image .text p {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.back-image .text a {
+  padding: 0.95em 4em;
+  width: auto;
+  font-size: 16px;
+  color: #fff;
+  background-color: #EB2F2F;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.back-image .text a:hover {
+  background: #E91111;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.top-events {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.top-events h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.top-events .direc .customNextBtn {
+  position: absolute;
+  top: 48%;
+  z-index: 999;
+  left: -1%;
+}
+
+.top-events .direc .customPrevBtn {
+  z-index: 999;
+  position: absolute;
+  right: 0;
+  top: 48%;
+  right: -1%;
+}
+
+.top-events .info {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1.2rem 0;
+}
+
+.top-events .info p {
+  margin-bottom: 0rem;
+  color: #303030;
+  font-size: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top-events .info a {
+  font-size: 1.1rem;
+  color: #343DBD;
+  font-weight: 600;
+}
+
+.top-events .owl-carousel .card-body .card-title {
+  font-size: 1rem;
+  color: #303030;
+  font-weight: 600;
+}
+
+.top-events .owl-carousel .card-body p {
+  color: #ACABAB;
+  font-size: 1rem;
+}
+
+.top-events .owl-carousel .card-body a {
+  color: #90298D;
+  font-size: 14px;
+  margin-right: 2rem;
+}
+
+.top-events .owl-carousel .card-body span {
+  color: #ACABAB;
+  font-size: 14px;
+}
+
+.top-events .owl-carousel .card-body .card-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 1.5rem;
+}
+
+.top-events .owl-carousel .card-body .card-social .star {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  width: 30px;
+}
+
+.top-events .owl-carousel .card-body .card-social .star svg {
+  height: 30px;
+  width: 30px;
+  padding-left: 2px;
+  cursor: pointer;
+}
+
+.top-events .owl-carousel .card-body .card-social .gradientButton {
+  width: 90px;
+  height: 45px;
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#3165b2), to(#90298d));
+  background-image: linear-gradient(to right, #3165b2 0%, #90298d 100%);
+  color: #ffffff;
+  outline: none;
+  border: none;
+  font-size: 16px;
+}
+
+.categories {
+  margin: 5rem 0;
+}
+
+.categories h3 {
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.categories .row div {
+  margin-bottom: 1rem;
+}
+
+.categories .row h5 {
+  margin-top: 0.6rem;
+  font-size: 1rem;
+  color: #303030;
+  font-weight: 600;
+}
+
+.categories .row img {
+  width: 100%;
+  height: 85%;
+}
+
+footer {
+  padding: 4rem 0 2rem 0;
+  background-color: #303030;
+}
+
+footer hr {
+  background-color: #FFFFFF;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+footer p {
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+
+footer .foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .foot div:first-child a {
+  margin-right: 4%;
+}
+
+footer .foot div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer .foot div:nth-child(2) a {
+  margin-right: 10%;
+}
+
+footer .foot div:nth-child(2) a i {
+  font-size: 1.2rem;
+}
+
+footer .foot a {
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 765px) {
+  .back-image {
+    height: 500px;
+  }
+  .back-image .text a {
+    padding: 0.75em 3em;
+  }
+  .back-image .text h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .rightnav {
+    display: none !important;
+  }
+  .mobilenav {
+    display: block !important;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    outline: 0;
+  }
+  .mobilenav i {
+    border: 0;
+    outline: 0;
+  }
+  .mobilenav:active, .mobilenav:focus {
+    border: 0;
+    outline: 0;
+  }
+  .back-image {
+    height: 450px;
+  }
+  .back-image .text {
+    padding-top: 150px !important;
+  }
+  .back-image .text h2 {
+    font-size: 18px !important;
+  }
+  .back-image .text p {
+    font-size: 15px;
+  }
+  .top-events h3 {
+    font-size: 15px;
+  }
+  .top-events .info p {
+    font-size: 12px;
+  }
+  .top-events .info a {
+    display: none;
+  }
+  .top-events .owl-carousel .item .card {
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+  }
+  .categories .row img {
+    width: 100%;
+  }
+  footer hr {
+    display: none !important;
+  }
+  footer p {
+    text-align: center;
+    margin-top: 8%;
+  }
+  footer .foot div:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  footer .foot div:first-child a {
+    font-size: 14px;
+  }
+  footer .foot div:nth-child(2) {
+    margin-top: 8%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  footer .foot div:nth-child(2) a {
+    float: none !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

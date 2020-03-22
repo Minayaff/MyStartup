@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.descrp .card .card-pict img {
+  height: 80%;
+}
+
+.descrp .card .card-pict .rating {
+  margin: auto;
+}
+
+.descrp .card .card-pict .rating .wave,
+.descrp .card .card-pict .rating .like {
+  width: 36px;
+  height: 53px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  margin: 0 1rem;
+}
+
+.descrp .card .card-pict .rating .wave,
+.descrp .card .card-pict .rating .like:focus {
+  outline: none;
+}
+
+.descrp .card-body button:first-child {
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: 1rem;
+  font-size: 1.9rem;
+  color: #ABACAC;
+  margin: -1% 0;
+}
+
+.descrp .card-body button:nth-child(2) {
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: 4rem;
+}
+
+.descrp .card-body button:focus {
+  outline: none;
+}
+
+.descrp .card-body .prof {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.descrp .card-body .prof h5 {
+  margin-left: 1rem !important;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.descrp .card-body .prof img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.descrp .card-body .prof h5 {
+  margin: auto 0;
+}
+
+.descrp .card-body .text-title {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #303030;
+}
+
+.descrp .card-body .text-title h5 {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.descrp .card-body .text-title p {
+  position: absolute;
+  right: 0;
+  color: #acabab !important;
+}
+
+.descrp .card-body .text-main p {
+  color: #303030;
+  font-size: 15px;
+}
+
+.descrp .card-body .card-info .infor {
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.descrp .card-body .card-info .infor .main-info {
+  color: #717171;
+  font-weight: 500;
+}
+
+.descrp .card-body .card-info .infor p {
+  color: #303030;
+  margin-right: 1.3rem;
+  font-weight: 600;
+}
+
+.join {
+  width: 140px;
+  height: 45px;
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#3165b2), to(#90298d));
+  background-image: linear-gradient(to right, #3165b2 0%, #90298d 100%);
+  color: #ffffff;
+  outline: none;
+  border: none;
+}
+
+.post {
+  width: 140px;
+  height: 45px;
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#3165b2), to(#90298d));
+  background-image: linear-gradient(to right, #3165b2 0%, #90298d 100%);
+  color: #ffffff;
+  outline: none;
+  border: none;
+  margin: 2rem auto;
+  display: block;
+}
+
+.comments {
+  background: #ececec;
+  height: 100%;
+}
+
+.comments textarea {
+  margin: auto;
+  width: 85%;
+  display: block;
+  resize: none;
+}
+
+.comments h1 {
+  color: #ACABAB;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  margin-left: 6rem;
+}
+
+.comments .comment {
+  margin: auto;
+  position: relative;
+  width: 85%;
+  background-color: #FFFFFF;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+}
+
+.comments .comment .auto {
+  width: 90%;
+  margin: auto;
+}
+
+.comments .comment .auto p {
+  margin-top: 1.2rem;
+}
+
+.comments .comment .auto .prof {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comments .comment .auto .prof p {
+  position: absolute;
+  right: 2rem;
+}
+
+.comments .comment .auto .prof h5 {
+  margin-left: 1rem !important;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.comments .comment .auto .prof img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.comments .comment .auto .prof h5 {
+  margin: auto 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .card {
+    max-width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .descrp .card-body button:first-child {
+    margin: -2% 0;
+  }
+  .comments textarea {
+    width: 100%;
+  }
+  .comments .comment {
+    width: 100%;
+  }
+  .card-body {
+    padding-left: 0rem !important;
+  }
+  .card-body .card-info .infor {
+    font-size: 14px !important;
+  }
+  .card-body .card-info button {
+    display: block;
+    margin: auto !important;
+  }
+  .card-body .text-title h5 {
+    font-size: 1rem !important;
+  }
+  .card-body .text-title p {
+    font-size: 0.9rem;
+  }
+}
+/*# sourceMappingURL=description.css.map */

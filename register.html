@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="css/register.css">
+    <!-- for password -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <!-- for file -->
+    <link href="./file/fine-uploader-new.css" rel="stylesheet">
+    <script src="./file/fine-uploader.js"></script>
+
+
+
+
+    <script type="text/template" id="qq-template-validation">
+        <div class="qq-uploader-selector qq-uploader" qq-drop-area-text="Drop files here">
+        <div class="qq-total-progress-bar-container-selector qq-total-progress-bar-container">
+            <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="qq-total-progress-bar-selector qq-progress-bar qq-total-progress-bar"></div>
+        </div>
+        <div class="qq-upload-drop-area-selector qq-upload-drop-area" qq-hide-dropzone>
+            <span class="qq-upload-drop-area-text-selector"></span>
+        </div>
+        <div class="qq-upload-button-selector qq-upload-button">
+            <div>Select files</div>
+        </div>
+        <span class="qq-drop-processing-selector qq-drop-processing">
+            <span>Processing dropped files...</span>
+            <span class="qq-drop-processing-spinner-selector qq-drop-processing-spinner"></span>
+        </span>
+        <ul class="qq-upload-list-selector qq-upload-list" aria-live="polite" aria-relevant="additions removals">
+            <li>
+                <div class="qq-progress-bar-container-selector">
+                    <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="qq-progress-bar-selector qq-progress-bar"></div>
+                </div>
+                <span class="qq-upload-spinner-selector qq-upload-spinner"></span>
+                <img class="qq-thumbnail-selector" qq-max-size="100" qq-server-scale>
+                <span class="qq-upload-file-selector qq-upload-file"></span>
+                <span class="qq-upload-size-selector qq-upload-size"></span>
+                <button type="button" class="qq-btn qq-upload-cancel-selector qq-upload-cancel">Cancel</button>
+                <button type="button" class="qq-btn qq-upload-retry-selector qq-upload-retry">Retry</button>
+                <button type="button" class="qq-btn qq-upload-delete-selector qq-upload-delete">Delete</button>
+                <span role="status" class="qq-upload-status-text-selector qq-upload-status-text"></span>
+            </li>
+        </ul>
+
+        <dialog class="qq-alert-dialog-selector" style= "margin: auto;" >
+            <div class="qq-dialog-message-selector"></div>
+            <div class="qq-dialog-buttons">
+                <button type="button" class="qq-cancel-button-selector">Close</button>
+            </div>
+        </dialog>
+
+        <dialog class="qq-confirm-dialog-selector">
+            <div class="qq-dialog-message-selector"></div>
+            <div class="qq-dialog-buttons">
+                <button type="button" class="qq-cancel-button-selector">No</button>
+                <button type="button" class="qq-ok-button-selector">Yes</button>
+            </div>
+        </dialog>
+
+        <dialog class="qq-prompt-dialog-selector">
+            <div class="qq-dialog-message-selector"></div>
+            <input type="text">
+            <div class="qq-dialog-buttons">
+                <button type="button" class="qq-cancel-button-selector">Cancel</button>
+                <button type="button" class="qq-ok-button-selector">Ok</button>
+            </div>
+        </dialog>
+    </div>
+</script>
+
+
+</head>
+
+<body>
+
+    <form class="register">
+        <div class="brand">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="188.5"
+                height="77.929" viewBox="0 0 188.5 77.929">
+                <defs>
+                    <linearGradient id="linear-gradient" x1="0.017" y1="0.971" x2="1.291" y2="-0.318"
+                        gradientUnits="objectBoundingBox">
+                        <stop offset="0" stop-color="#26a7df" />
+                        <stop offset="0.13" stop-color="#4086c9" />
+                        <stop offset="0.295" stop-color="#5c64b3" />
+                        <stop offset="0.464" stop-color="#724aa2" />
+                        <stop offset="0.636" stop-color="#823795" />
+                        <stop offset="0.812" stop-color="#8b2b8e" />
+                        <stop offset="1" stop-color="#8f288c" />
+                    </linearGradient>
+                    <linearGradient id="linear-gradient-2" x1="14.931" y1="-11.372" x2="16.942" y2="-12.963"
+                        xlink:href="#linear-gradient" />
+                    <linearGradient id="linear-gradient-3" x1="-1.548" y1="3.247" x2="2.273" y2="-2.217"
+                        xlink:href="#linear-gradient" />
+                </defs>
+                <g id="Group_64" data-name="Group 64" transform="translate(-585 -207)">
+                    <g id="Group_52" data-name="Group 52" transform="translate(630.609 228.39)">
+                        <path id="Path_26" data-name="Path 26"
+                            d="M285.808,179.926V158.109h-8.4v-3h20.423v3h-8.4v21.817Z"
+                            transform="translate(-277.409 -155.112)" fill="#303030" />
+                        <path id="Path_27" data-name="Path 27"
+                            d="M309.687,182.024a7.56,7.56,0,0,1-3.015-3.172,10.332,10.332,0,0,1-1.063-4.809,10.44,10.44,0,0,1,1.063-4.827,7.544,7.544,0,0,1,3.015-3.189,9.69,9.69,0,0,1,9.027,0,7.552,7.552,0,0,1,3.015,3.189,10.448,10.448,0,0,1,1.063,4.827,10.341,10.341,0,0,1-1.063,4.809,7.568,7.568,0,0,1-3.015,3.172,9.69,9.69,0,0,1-9.027,0Zm8.225-3.276a9.112,9.112,0,0,0-.017-9.375,4.435,4.435,0,0,0-3.677-1.638,4.523,4.523,0,0,0-3.729,1.638,9.008,9.008,0,0,0-.017,9.375,5.118,5.118,0,0,0,7.441,0Z"
+                            transform="translate(-285.953 -158.081)" fill="#303030" />
+                        <path id="Path_28" data-name="Path 28"
+                            d="M358.78,165.512h3.45l-6.691,17.565h-3.206l-4.706-12.721-4.67,12.721h-3.206l-6.691-17.565h3.659l4.774,13.418,4.844-13.418h2.788l4.845,13.418Z"
+                            transform="translate(-294.269 -158.263)" fill="#303030" />
+                        <path id="Path_29" data-name="Path 29"
+                            d="M394.872,165.33V182.9h-3.485v-3a5.386,5.386,0,0,1-2.283,2.4,7.207,7.207,0,0,1-3.537.836,7.235,7.235,0,0,1-6.831-4.269,10.909,10.909,0,0,1-.976-4.757,11.075,11.075,0,0,1,.993-4.81,7.676,7.676,0,0,1,2.771-3.241,7.276,7.276,0,0,1,4.043-1.15,6.99,6.99,0,0,1,3.52.854,5.726,5.726,0,0,1,2.3,2.422V165.33ZM390.08,178.7a8.966,8.966,0,0,0,0-9.323,4.972,4.972,0,0,0-7.423.052,7.353,7.353,0,0,0-1.342,4.688,7.069,7.069,0,0,0,1.342,4.6,4.571,4.571,0,0,0,3.747,1.638A4.416,4.416,0,0,0,390.08,178.7Z"
+                            transform="translate(-307.812 -158.081)" fill="#303030" />
+                        <path id="Path_30" data-name="Path 30"
+                            d="M421.107,165.562h3.519l-7.633,17.53h-3.171l-7.562-17.53h3.728l5.507,13.557Z"
+                            transform="translate(-316.447 -158.278)" fill="#303030" />
+                        <path id="Path_31" data-name="Path 31"
+                            d="M450.692,174.183H438.145q.174,6.169,5.611,6.169a8.722,8.722,0,0,0,5.541-1.987l1.08,2.509a8.609,8.609,0,0,1-3.015,1.655,11.573,11.573,0,0,1-3.678.61,8.912,8.912,0,0,1-6.622-2.422,9.01,9.01,0,0,1-2.4-6.639,10.387,10.387,0,0,1,1.063-4.775,7.81,7.81,0,0,1,2.98-3.241,8.3,8.3,0,0,1,4.356-1.15,7.089,7.089,0,0,1,5.593,2.3,9.281,9.281,0,0,1,2.04,6.378Zm-10.8-5.472a5.72,5.72,0,0,0-1.6,3.381h9.306a5.405,5.405,0,0,0-1.359-3.4,4.159,4.159,0,0,0-3.1-1.168A4.529,4.529,0,0,0,439.888,168.711Z"
+                            transform="translate(-325.051 -158.081)" fill="#303030" />
+                        <path id="Path_32" data-name="Path 32"
+                            d="M461.859,180.909l1.046-2.544a10.15,10.15,0,0,0,6.308,2.091,5.083,5.083,0,0,0,2.753-.61,1.94,1.94,0,0,0,.942-1.725,1.831,1.831,0,0,0-.645-1.481,5.631,5.631,0,0,0-2.178-.924l-2.928-.7a6.691,6.691,0,0,1-3.5-1.725,4.249,4.249,0,0,1-1.2-3.084,4.611,4.611,0,0,1,1.9-3.834,8.031,8.031,0,0,1,5.036-1.464,10.716,10.716,0,0,1,3.572.592,8.28,8.28,0,0,1,2.875,1.673l-1.081,2.474a8.5,8.5,0,0,0-5.366-2.021,4.65,4.65,0,0,0-2.649.645,2.057,2.057,0,0,0-.94,1.795,1.916,1.916,0,0,0,.593,1.464,4.177,4.177,0,0,0,1.882.871l3,.732a7.439,7.439,0,0,1,3.712,1.76,4.22,4.22,0,0,1,1.2,3.119,4.384,4.384,0,0,1-1.9,3.747,8.659,8.659,0,0,1-5.176,1.377A10.906,10.906,0,0,1,461.859,180.909Z"
+                            transform="translate(-333.291 -158.081)" fill="#303030" />
+                    </g>
+                    <g id="Group_53" data-name="Group 53" transform="translate(585 207)">
+                        <path id="Path_33" data-name="Path 33"
+                            d="M226.788,127.8S214.2,139.174,212.266,156.05a44.193,44.193,0,0,0,3.489,23.022c1.09,2.359,8.422,17.555,25.962,22.718,19.919,5.863,35.927-6.236,39.269-8.762a42.581,42.581,0,0,0,7.465-7.789s-10.932,5.99-20.493,8.332c-11.943,2.926-26.532-1.038-36.752-10.466a45.788,45.788,0,0,1-12.612-29.682C218.115,138.889,226.788,127.8,226.788,127.8Z"
+                            transform="translate(-211.977 -125.446)" fill="url(#linear-gradient)" />
+                        <path id="Path_34" data-name="Path 34"
+                            d="M281.112,179.912s-13.923,12.926-35.2,0c0,0-15-7.517-13.06-28.187,1.936-20.583,20.3-27.3,20.3-27.3s-12.986,13.551-12.44,26.831c.292,7.11,1.12,14.99,7.7,21.034C266.184,188.607,281.112,179.912,281.112,179.912Z"
+                            transform="translate(-218.248 -124.425)" fill="url(#linear-gradient-2)" />
+                        <path id="Path_35" data-name="Path 35"
+                            d="M252.579,149.935s.66-8.926,6.973-13.946c7.561-6.014,18.512-3.238,18.512-3.238a31.056,31.056,0,0,0-15.358,5.728A32.556,32.556,0,0,0,252.579,149.935Z"
+                            transform="translate(-224.278 -126.754)" fill="url(#linear-gradient-3)" />
+                    </g>
+                </g>
+            </svg>
+
+        </div>
+
+        <div class="forms">
+            <div class="form-group">
+                <label for="text">Name</label>
+                <input type="text" class="form-control" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="text">Surname</label>
+                <input type="text" class="form-control" placeholder="Surname">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email</label>
+                <input type="text" class="form-control" placeholder="Email">
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <div class="input-group" id="show_hide_password">
+                    <input class="form-control" type="password" placeholder="Password">
+                    <div class="input-group-addon">
+                        <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Comfirm Password</label>
+                <div class="input-group" id="show_hide_password">
+                    <input class="form-control" type="password" placeholder="Comfirm Password">
+                    <div class="input-group-addon">
+                        <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="">Add photo</label>
+                <div id="fine-uploader-validation"></div>
+            </div>
+
+            <div class="form-group">
+                <input id="mapClick" type="button" value="Submit">
+            </div>
+        </div>
+    </form>
+
+    <script>
+        $(document).ready(function () {
+            $("#show_hide_password a").on('click', function (event) {
+                event.preventDefault();
+                if ($('#show_hide_password input').attr("type") == "text") {
+                    $('#show_hide_password input').attr('type', 'password');
+                    $('#show_hide_password i').addClass("fa-eye-slash");
+                    $('#show_hide_password i').removeClass("fa-eye");
+                } else if ($('#show_hide_password input').attr("type") == "password") {
+                    $('#show_hide_password input').attr('type', 'text');
+                    $('#show_hide_password i').removeClass("fa-eye-slash");
+                    $('#show_hide_password i').addClass("fa-eye");
+                }
+            });
+        });
+    </script>
+
+    <script>
+        var restrictedUploader = new qq.FineUploader({
+            element: document.getElementById("fine-uploader-validation"),
+            template: 'qq-template-validation',
+            request: {
+                endpoint: '/server/uploads'
+            },
+            thumbnails: {
+                placeholders: {
+                    waitingPath: '/source/placeholders/waiting-generic.png',
+                    notAvailablePath: '/source/placeholders/not_available-generic.png'
+                }
+            },
+            validation: {
+                allowedExtensions: ['jpeg', 'jpg', 'txt'],
+                itemLimit: 1,
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #ececec;
+}
+
+.profile {
+  padding-top: 5rem;
+}
+
+.profile .profile-detail {
+  text-align: center;
+}
+
+.profile .profile-detail img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+}
+
+.profile .profile-detail h3 {
+  font-size: 1.2rem;
+  color: #6F3E9A;
+  margin-top: 1rem;
+}
+
+.profile .profile-detail a svg {
+  width: 2rem;
+}
+
+.profile .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile .info .activ {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 2rem;
+  font-size: 1rem;
+}
+
+.profile .info .activ p {
+  color: #717171;
+}
+
+.profile .info .activ a {
+  color: #6F3E9A;
+  margin-right: 0.5rem;
+}
+
+.events {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.events .card-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.events .card-section .card {
+  background-color: #ffffff;
+  margin-right: 3rem;
+}
+
+.events .card-section .card img {
+  width: 100%;
+}
+
+.events .card-section .card .card-body .card-title {
+  font-size: 1rem;
+  color: #303030;
+  font-weight: 600;
+}
+
+.events .card-section .card .card-body p {
+  color: #ACABAB;
+  font-size: 1rem;
+}
+
+.events .card-section .card .card-body a {
+  color: #90298D;
+  font-size: 14px;
+  margin-right: 2rem;
+}
+
+.events .card-section .card .card-body span {
+  color: #ACABAB;
+  font-size: 14px;
+}
+
+.events .card-section .card .card-body .card-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 1.5rem;
+}
+
+.events .card-section .card .card-body .card-social .star {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  width: 30px;
+}
+
+.events .card-section .card .card-body .card-social .star svg {
+  height: 30px;
+  width: 30px;
+  padding-left: 2px;
+  cursor: pointer;
+}
+
+.events .card-section .card .card-body .card-social .gradientButton {
+  width: 90px;
+  height: 45px;
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#3165b2), to(#90298d));
+  background-image: linear-gradient(to right, #3165b2 0%, #90298d 100%);
+  color: #ffffff;
+  outline: none;
+  border: none;
+  font-size: 16px;
+}
+
+.events .card-section .card .card-body .card-social .joined {
+  width: 90px;
+  height: 45px;
+  border-radius: 5px;
+  border-color: #90298D;
+  outline: none;
+  color: #90298D;
+  background-color: white;
+  font-size: 16px;
+}
+
+.events .card-section .card .card-body .card-social .edit {
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .card {
+    width: 100% !important;
+    margin-bottom: 3rem;
+  }
+}
+/*# sourceMappingURL=Profile.css.map */

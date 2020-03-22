@@ -1,0 +1,113 @@
+html {
+    scroll-behavior: smooth;
+    transition-duration: 1400ms;
+}
+body {
+    background: #ececec;
+}
+/* General */
+.floatleft{float: left !important;}
+.floatright{float: right !important;}
+.textdark {color: #303030 !important;}
+.clear {
+    display: block;
+    content: "";
+    clear: both;
+}
+.pointer{cursor:pointer !important;}
+
+
+
+/* Posts */
+div.posts{width:100%;margin: 5rem auto;}
+div.posts>section.singlePost{width:100%;height:400px;margin:3rem 0;background:#ffffff;}
+div.posts>section.singlePost>div.postspicture{width: 35%;height:303px;background:url(../img/arthur-poulin-NhU0nUR7920-unsplash.jpg);}
+div.posts>section.singlePost>div.postsdetail{width:65%;height:303px;padding:24px 43px;position:relative;}
+
+div.postsdetail>section.posthead>img.profilepicture{width:52px;height:52px;}
+div.postsdetail>section.posthead>h5.fullname{font-size:1rem !important;display:block;margin:5px 0 0 10px!important;height:26px;width:400px;}
+div.postsdetail>section.posthead>p.personDegree{color:#acabab;font-size:14px !important;display:block;margin:5px 0 0 10px!important;height:26px;width:400px;}
+div.postsdetail>section.posthead>h2.posttitle {margin: 17px 0;}
+div.postsdetail>section.posthead>div.postoptions{width:52px;height:14px;margin:-16px 0 0 0;}
+div.postoptions>div.dots {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #acabab;
+    margin: 2px;
+    display: inline-block;
+    float: right;
+}
+
+div.postsdetail>article.postBody>h2.postTitle{margin:37px 0 20px;font-size:20px !important;font-weight:bold;line-height:27px;}
+div.postsdetail>article.postBody>p.postDate{font-size:14px !important;color:#acabab !important;line-height:37px;}
+div.postsdetail>article.postBody>p.postdescription{font-size:14px;line-height:24px;}
+div.postsdetail>section.postbuttons>button.gradientButton{
+    width: 140px;
+    height: 45px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #3165b2 0%, #90298d 100%);
+    color: #ffffff;
+    outline: none;
+    border: none;
+}
+div.postsdetail>section.category{padding:13px 0 0 0;}
+div.postsdetail>section.category>p{color:#acabab !important;}
+div.postsdetail>section.category>a{padding:0 0 0 20px;color:#303030;}
+
+div.posts>section.singlePost>div.bottomBar{width:100%;height:97px;padding:20px 30px;}
+div.bottomBar>div.readMore>svg{margin:16px 0 -4px 20px !important;}
+div.bottomBar>div.readMore>a,div.bottomBar>div.readMore>a:hover{text-decoration:none !important;}
+div.bottomBar>div.rating{
+    width: 291px;
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+    padding: 6px 30px;
+}
+div.rating>button,div.rating>button:active,div.rating>button:focus{
+    width: 36px;
+    height: 53px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: default;
+}
+div.rating>button>svg:hover {
+    transform: scale(1.5);
+    transition-duration: 500ms;
+}
+
+div.posts>section.bringMore{display:flex;justify-content:space-around;margin:14px 0 122px;}
+div.posts>section.bringMore>button.outlineButton{
+    width: 140px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #90298d;
+    color: #90298d;
+    outline: none;
+    background: transparent;
+}
+div.posts>section.bringMore>button.outlineButton:hover{
+    background-image: linear-gradient(to right, #3165b2 0%, #90298d 100%);
+    color: #ffffff;
+    outline: none;
+    border: none;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    height: 344px;
+    padding: 0 100px;
+    background: #303030;
+}
+footer>div.foo{width:1140px;height:172px;}
+footer>div.foo>ul{list-style-type:none;margin:104px 0 42px;padding:0;}
+div.foo>ul>li{float:left;margin-right:37px;}
+div.foo>ul>li>a, div.foo>ul>li>a:hover{text-decoration:none;color:#ffffff;font-size:18px;line-height:27px;}
+div.foo-alt{height:172px;width:100%;border-top:1px solid #ffffff;padding:42px 0 103px;}
+div.foo-alt>p{font-size:18px;font-weight:400;line-height:27px;}
+ul.social>li>a.face-f{content: url("../Images/Icons/facebook-f.svg");height:25px;}
+ul.social>li>a.twit{content: url("../Images/Icons/twitter.svg");height:24px;}
+ul.social>li>a.u-tube{content: url("../Images/Icons/youtube.svg");height:24px;}

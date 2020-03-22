@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.page-header {
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(5, 5, 5, 0.4)), url(../img/background-image/perry-grone-lbLgFFlADrY-unsplash.jpg);
+  height: 24rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+.page-header h5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 12rem;
+  font-size: 2rem;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+}
+
+.vision {
+  margin-bottom: 8rem;
+}
+
+.vision .mid {
+  width: 85%;
+  margin: auto;
+}
+
+.vision .mid .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vision .mid .row div:first-child img {
+  margin-left: 6rem;
+}
+
+.vision .mid .row div:nth-child(4) img {
+  margin-left: 10rem;
+}
+
+.infoWe .mid {
+  margin-left: 5rem;
+}
+
+.infoWe .mid .row div {
+  margin-bottom: 3rem;
+}
+
+.infoWe .mid .row div .icon-svg {
+  margin-bottom: 0.6rem;
+}
+
+.infoWe .mid .row div .icon-svg svg {
+  height: 50px;
+}
+
+.infoWe .mid .row div h6 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #303030;
+}
+
+.infoWe .mid .row div p {
+  font-size: 1rem;
+  color: #ACABAB;
+}
+
+.video {
+  margin: 3rem 0rem;
+}
+
+.video .embed-responsive {
+  width: 50%;
+  height: 23rem;
+  margin: auto;
+}
+
+.ourSponsors {
+  background-color: #ACABAB;
+  padding: 5rem 0;
+}
+
+.ourSponsors .row div svg {
+  width: 100%;
+}
+
+.our-team {
+  background-image: url("../img/background-image/Subtraction 20.png");
+  background-repeat: no-repeat;
+  margin-top: 5rem;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.our-team h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #303030;
+  margin-bottom: 2rem;
+}
+
+.our-team .row div img {
+  width: 90%;
+}
+
+.our-team .row div h5 {
+  color: #FFFFFF;
+  font-size: 1.3rem;
+  margin-top: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.our-team .row div p {
+  color: #ACABAB;
+}
+
+@media only screen and (max-width: 550px) {
+  .our-team {
+    background-image: url("../img/background-image/Subtraction 35.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  .ourSponsors {
+    padding: 3rem 0;
+  }
+  .ourSponsors .row div svg {
+    margin-top: 2rem;
+  }
+  .video .embed-responsive {
+    width: 100% !important;
+    height: 100%;
+    margin: auto;
+  }
+  .infoWe .mid {
+    margin-left: 0rem !important;
+  }
+  .infoWe .mid .row {
+    margin: auto;
+  }
+  .vision .mid {
+    width: 100%;
+  }
+  .vision .mid .row div img {
+    width: 100%;
+  }
+  .vision .mid .row div:first-child img {
+    margin-left: 0rem;
+  }
+  .vision .mid .row div:nth-child(4) img {
+    margin-left: 0rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .video .embed-responsive {
+    width: 70%;
+    height: 100%;
+  }
+  .infoWe .mid {
+    margin-left: 1rem;
+  }
+  .vision .mid {
+    width: 100%;
+  }
+  .vision .mid .row div:first-child img {
+    margin-left: 0 !important;
+  }
+  .vision .mid .row div:nth-child(4) img {
+    margin-left: 0rem !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .vision .mid .row div:first-child img {
+    margin-left: 0rem !important;
+  }
+  .vision .mid .row div:nth-child(4) img {
+    margin-left: 0rem;
+  }
+}
+/*# sourceMappingURL=about.css.map */

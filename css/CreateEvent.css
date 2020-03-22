@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-image: url("../img/background-image/Union 9.jpg");
+  background-repeat: repeat-x;
+  color: #303030 !important;
+  background-color: #ffffff;
+  background-position: bottom;
+  background-size: contain;
+}
+
+body .creat {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  width: 70%;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+body .creat .brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem 0;
+}
+
+body .creat .forms {
+  width: 55%;
+  margin: auto;
+  height: 100%;
+}
+
+body .creat .forms .row .form-group {
+  position: relative;
+}
+
+body .creat .forms .row .form-group svg {
+  position: absolute;
+  right: 1rem;
+  top: 2.5rem;
+}
+
+body .creat .forms .form-group label {
+  font-weight: 600;
+}
+
+body .creat .forms .form-group #mapClick {
+  margin-top: 4rem;
+  display: block;
+  background: #343dbd;
+  color: #ffffff;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 38px;
+  outline: none;
+  border: none;
+}
+
+#map-canvas {
+  height: 18rem;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+@media only screen and (max-width: 550px) {
+  body {
+    height: 100%;
+    background-image: none;
+  }
+  body .qq-uploader {
+    padding: 0px !important;
+  }
+  body .creat {
+    width: 100% !important;
+    margin-top: 0;
+    height: 100%;
+  }
+  body .creat .brand {
+    margin-bottom: 3rem;
+  }
+  body .creat .forms {
+    width: 90%;
+  }
+  body .creat .forms #map-canvas {
+    width: 100% !important;
+    height: 20rem;
+  }
+}
+/*# sourceMappingURL=CreateEvent.css.map */

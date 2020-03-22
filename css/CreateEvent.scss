@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    background-image: url("../img/background-image/Union\ 9.jpg");
+    background-repeat: repeat-x;
+    color: #303030 !important;
+    background-color: #ffffff;
+    background-position: bottom;
+    background-size: contain;
+
+    .creat {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        background-color: #ffffff;
+        width: 70%;
+        margin: auto;
+        margin-top: 3rem;
+
+
+        .brand {
+            display: flex;
+            justify-content: center;
+            padding: 2rem 0;
+        }
+
+        .forms {
+            width: 55%;
+            margin: auto;
+            height: 100%;
+
+            .row {
+
+                .form-group{
+                    position: relative;
+
+                    svg {
+                        position: absolute;
+                        right: 1rem;
+                        top: 2.5rem;
+                    }
+                }
+            }
+
+            .form-group {
+                label{
+                    font-weight: 600;
+                }
+                #mapClick {
+                    margin-top: 4rem;
+                    display: block;
+                    background: #343dbd;
+                    color: #ffffff;
+                    border-radius: 5px;
+                    width: 100%;
+                    height: 50px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 27px;
+                    margin-bottom: 38px;
+                    outline: none;
+                    border: none;
+                }
+            }
+        }
+
+    }
+}
+
+
+#map-canvas {
+    height: 18rem;
+    width: 100%;
+    margin: 0px;
+    padding: 0px
+}
+
+
+
+@media only screen and (max-width: 550px) {
+    body {
+        height: 100%;
+        background-image: none;
+
+        .qq-uploader {
+            padding: 0px !important;
+        }
+
+        .creat {
+            width: 100% !important;
+            margin-top: 0;
+            height: 100%;
+
+            .brand {
+                margin-bottom: 3rem;
+            }
+
+            .forms {
+                width: 90%;
+
+                #map-canvas {
+                    width: 100% !important;
+                    height: 20rem;
+
+                }
+            }
+        }
+    }
+}

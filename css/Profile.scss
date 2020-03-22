@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #ececec;
+}
+
+.profile {
+    padding-top: 5rem;
+
+    .profile-detail {
+        text-align: center;
+
+        img {
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            margin: auto;
+            display: block;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: #6F3E9A;
+            margin-top: 1rem;
+        }
+
+        a {
+            svg {
+                width: 2rem;
+            }
+        }
+    }
+
+    .info {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+
+        .activ {
+            cursor: pointer;
+            display: flex;
+            margin-right: 2rem;
+            font-size: 1rem;
+
+            p {
+                color: #717171;
+            }
+
+            a {
+                color: #6F3E9A;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}
+
+.events {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+
+    .card-section {
+        display: flex;
+
+        .card {
+            background-color: #ffffff;
+            margin-right: 3rem;
+
+            img {
+                width: 100%;
+            }
+
+            .card-body {
+                .card-title {
+                    font-size: 1rem;
+                    color: #303030;
+                    font-weight: 600;
+                }
+
+                p {
+                    color: #ACABAB;
+                    font-size: 1rem;
+                }
+
+                a {
+                    color: #90298D;
+                    font-size: 14px;
+                    margin-right: 2rem;
+                }
+
+                span {
+                    color: #ACABAB;
+                    font-size: 14px;
+                }
+
+                .card-social {
+                    display: flex;
+                    justify-content: space-around;
+                    margin-top: 1.5rem;
+
+                    .star {
+                        display: inline-grid;
+                        width: 30px;
+
+                        svg {
+                            height: 30px;
+                            width: 30px;
+                            padding-left: 2px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .gradientButton {
+
+                        width: 90px;
+                        height: 45px;
+                        border-radius: 5px;
+                        background-image: linear-gradient(to right, #3165b2 0%, #90298d 100%);
+                        color: #ffffff;
+                        outline: none;
+                        border: none;
+                        font-size: 16px;
+                    }
+
+                    .joined {
+                        width: 90px;
+                        height: 45px;
+                        border-radius: 5px;
+                        border-color: #90298D;
+                        outline: none;
+                        color: #90298D;
+                        background-color: white;
+                        font-size: 16px;
+                    }
+
+                    .edit {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 550px){
+    .card{
+        width: 100% !important;
+        margin-bottom: 3rem;
+    }
+}
+
